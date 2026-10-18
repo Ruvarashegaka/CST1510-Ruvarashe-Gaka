@@ -21,7 +21,7 @@ def status_of(percent):
         return "WARNING"
     else:
         return "OK"
- def check(value, limit):
+def check(value, limit):
     """Calculates the difference and percentage."""
     difference = limit - value
     percent = (value / limit) * 100 if limit != 0 else 0
