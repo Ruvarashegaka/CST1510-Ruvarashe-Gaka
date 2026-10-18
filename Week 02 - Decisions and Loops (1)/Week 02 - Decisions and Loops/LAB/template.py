@@ -26,8 +26,8 @@ if percent_left >= 100:
 elif percent_left >= 90 and percent_left < 100:
     status = "OK"
 else:
-    status = "WARNING"
-    
+    status = "WARNING!"
+
 print(status)
 print()
 print("=" * 34)
