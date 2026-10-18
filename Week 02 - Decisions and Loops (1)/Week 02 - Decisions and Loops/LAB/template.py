@@ -17,13 +17,17 @@ host_name = input("Enter the host_name: ")
 gb_used = float(input("Enter the GB used: "))  
 gb_total = float(input("Enter the GB total: "))  
 difference = gb_total - gb_used  
-percent_left = (difference / gb_total) * 100 
+percent_left = (difference / gb_total) * 100
+
+"""conditional statement to determine the status based on the percentage left."""
+
 if percent_left >= 100:
     status = "OVER LIMIT"
 elif percent_left >= 90 and percent_left < 100:
     status = "OK"
 else:
     status = "WARNING"
+    
 print(status)
 print()
 print("=" * 34)

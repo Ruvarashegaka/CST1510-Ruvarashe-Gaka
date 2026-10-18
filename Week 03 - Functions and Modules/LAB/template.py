@@ -27,6 +27,7 @@ def check(value, limit):
     percent = (value / limit) * 100 if limit != 0 else 0
     return difference, percent
 
+
 host_name = input("Enter the host name: ")  
 GB_used= float(input("Enter the GB used: "))   
 total_GB = float(input("Enter the total GB: "))   

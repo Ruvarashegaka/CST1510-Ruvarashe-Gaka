@@ -16,6 +16,7 @@ Host_name = (input("Enter your hostname: "))
 Gb_used = float(input("Enter Gb used: "))     
 Gb_total = float(input("Enter Gb total: "))   
 Gb_left = Gb_total - Gb_used   
+"""calculates the percent used """
 percent = (Gb_used / Gb_total) * 100
 print()
 print("=" * 34)
