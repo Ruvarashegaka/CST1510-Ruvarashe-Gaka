@@ -13,19 +13,19 @@ Delete these instructions as you replace them with your code.
 """
 
 Host_name = (input("Enter your hostname: "))    
-Gb_used = float(input("Enter Gb used: "))     
-Gb_total = float(input("Enter Gb total: "))   
-Gb_left = Gb_total - Gb_used  
+GB_used = float(input("Enter Gb used: "))     
+GB_total = float(input("Enter Gb total: "))   
+GB_left = GB_total - GB_used  
  
 """calculates the percent used """
 
-percent = (Gb_used / Gb_total) * 100
+percent = (GB_used / GB_total) * 100
 print()
 print("=" * 34)
-print(f"RECORD CHECK  -  {Host_name}")
+print(f"RECORD CHECK - {Host_name}")
 print("=" * 34)
-print(f"Gb_used        :      {Gb_used:>10.2f}")
-print(f"Gb_total       :      {Gb_total:>10.2f}")
-print(f"Gb_left        :      {Gb_left:>+10.2f}")
+print(f"Gb_used        :      {GB_used:>10.2f}")
+print(f"Gb_total       :      {GB_total:>10.2f}")
+print(f"Gb_left        :      {GB_left:>+10.2f}")
 print(f"Percent        :      {percent:>10.2f}%")
 print("=" * 34)
