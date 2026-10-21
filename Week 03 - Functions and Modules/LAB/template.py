@@ -18,7 +18,7 @@ def status_of(percent):
     if percent >= 100:
         return "OVER LIMIT"
     elif percent >= 90:
-        return "WARNING"
+        return "WARNING!"
     else:
         return "OK"
 def check(value, limit):
