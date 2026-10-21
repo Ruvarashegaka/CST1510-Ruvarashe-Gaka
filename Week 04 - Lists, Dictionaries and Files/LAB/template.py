@@ -18,7 +18,7 @@ def check_record(value, limit):
     """Calculates the difference and percentage."""
     difference = limit - value
     percent = (value / limit) * 100 if limit != 0 else 0
-    status = "OVER LIMIT" if percent >= 100 else "WARNING" if percent >= 90 else "OK"
+    status = "OVER LIMIT" if percent >= 100 else "WARNING!" if percent >= 90 else "OK"
     return difference, percent, status
 
 def print_report(difference, percent, status):
